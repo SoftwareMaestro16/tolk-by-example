@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: 23 23 23;
+}
+
+@layer utilities {
+  .bg-body {
+    background-color: rgb(var(--color-bg));
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #020202;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.scrollbar-none {
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; 
+}
+
