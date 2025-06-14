@@ -4,7 +4,7 @@ export const simpleCounterTopic = {
     name: "counter",
     description: `
 
-The 'A Simple Counter' contract in Tolk is a basic smart contract designed to maintain a counter value and an owner address on the TON blockchain.
+The Simple Counter contract in Tolk is a basic smart contract designed to maintain a counter value and an owner address on the TON blockchain.
 ⠀
 
 This contract does the following:

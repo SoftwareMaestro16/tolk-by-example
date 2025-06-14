@@ -13,22 +13,25 @@ export function Examples() {
           <Link
             key={topic.id}
             href={topic.path}
-            className="inline-flex items-center justify-center px-6 py-4 
-              bg-white/2  
-              border border-white/30 dark:border-white/10 
-              backdrop-blur-md 
-              rounded-4xl 
-              transition-all duration-300 
-              text-black dark:text-white 
-              font-semibold text-lg 
-              hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 
-              hover:text-white 
-              hover:shadow-lg hover:border-transparent group"
-          >
+            className="
+                inline-flex items-center justify-center px-6 py-4
+                bg-white/2
+                border border-white/30 dark:border-white/10
+                backdrop-blur-md
+                rounded-4xl
+                transition-colors duration-300
+                text-black dark:text-white
+                font-semibold text-lg
+                hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500
+                hover:text-white
+                shadow-sm
+                group
+            "
+            >
             <span className="relative z-10 group-hover:text-white whitespace-nowrap">
-              {topic.title}
+                {topic.title}
             </span>
-          </Link>
+            </Link>
         ))}
       </div>
     </section>
