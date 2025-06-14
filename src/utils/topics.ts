@@ -12,7 +12,7 @@ export const topics = [
     { id: 11, title: "Variables", path: "/variables" },
     { id: 12, title: "Null", path: "/null" },
     { id: 13, title: "Match", path: "/match" },
-    { id: 14, title: "Match", path: "/match" },
+    { id: 14, title: "Text Messages", path: "/text-messages" },
     { id: 15, title: "Coins", path: "/coins" },
     { id: 16, title: "Sending TON", path: "/send-ton" },
     { id: 17, title: "Cells", path: "/cells" },
