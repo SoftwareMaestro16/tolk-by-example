@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { topics } from "../../utils/topics";
 
@@ -11,27 +13,38 @@ export function Examples() {
       <div className="flex flex-wrap justify-center gap-2 sm:gap-6 max-w-[96vw] sm:max-w-[57vw] mx-auto">
         {topics.map((topic) => (
           <Link
-            key={topic.id}
-            href={topic.path}
-            className="
-                inline-flex items-center justify-center px-6 py-4
-                bg-white/2
-                border border-white/30 dark:border-white/10
-                backdrop-blur-md
-                rounded-4xl
-                transition-colors duration-300
-                text-black dark:text-white
-                font-semibold text-lg
-                hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500
-                hover:text-white
-                shadow-sm
-                group
-            "
-            >
-            <span className="relative z-10 group-hover:text-white whitespace-nowrap">
-                {topic.title}
-            </span>
-            </Link>
+          key={topic.id}
+          href={topic.path}
+          className="
+            inline-flex items-center justify-center px-6 py-4
+            bg-white/5
+            border-2 border-transparent
+            backdrop-blur-md
+            rounded-4xl
+            transition-colors duration-300
+            text-black dark:text-white
+            font-semibold text-lg
+            hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500
+            hover:text-white
+            group
+          "
+          style={{
+            boxShadow: "0 0 0 rgba(0,0,0,0)", 
+            transition: "box-shadow 0.3s ease, border-color 0.3s ease",
+          }}
+          onMouseEnter={e => {
+            e.currentTarget.style.boxShadow = "0 4px 15px rgba(0, 112, 244, 0.4)";
+            e.currentTarget.style.borderColor = "transparent"; 
+          }}
+          onMouseLeave={e => {
+            e.currentTarget.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
+            e.currentTarget.style.borderColor = "transparent";
+          }}
+        >
+          <span className="relative z-10 group-hover:text-white whitespace-nowrap">
+            {topic.title}
+          </span>
+        </Link>
         ))}
       </div>
     </section>
