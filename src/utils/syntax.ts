@@ -10,7 +10,7 @@ export const tolkThemeColors: Record<string, string> = {
     identifier: "#ffffff",
     namedIdentifier: "#00CED1",
     number: "#ffffff",
-    string: "#ff00ff",
+    string: "#81669F",
     comment: "#969696af",
     annotation: "#09E574",
     error: "#ff4500",

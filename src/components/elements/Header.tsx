@@ -43,7 +43,7 @@ export function Header() {
 
             <Link
               href="/#examples"
-              className="bg-gradient-to-r from-blue-500 to-sky-500 px-4 py-2 rounded-xl font-bold transition-all duration-300"
+              className="bg-gradient-to-r from-blue-500 to-sky-500 px-4 py-2 rounded-xl font-bold transition-all text-white duration-300"
             >
               Get Started
             </Link>

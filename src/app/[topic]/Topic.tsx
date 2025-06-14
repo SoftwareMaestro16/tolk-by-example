@@ -16,7 +16,7 @@ export function TopicNavigation({ currentTopic }: { currentTopic: string }) {
       {prevTopic && (
         <button
           onClick={() => router.push(prevTopic.path)}
-          className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-blue-500 to-sky-500 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+          className="flex items-center gap-2 px-5 py-2 font-semibold bg-gradient-to-r from-blue-500 to-sky-500 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
         >
           <ArrowLeft size={18} />
           {prevTopic.title}
@@ -25,7 +25,7 @@ export function TopicNavigation({ currentTopic }: { currentTopic: string }) {
       {nextTopic && (
         <button
           onClick={() => router.push(nextTopic.path)}
-          className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-sky-500 to-blue-500 text-white rounded-lg shadow-md  hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 ml-auto"
+          className="flex items-center gap-2 px-5 py-2 font-semibold bg-gradient-to-r from-sky-500 to-blue-500 text-white rounded-lg shadow-md  hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 ml-auto"
         >
           {nextTopic.title}
           <ArrowRight size={18} />
